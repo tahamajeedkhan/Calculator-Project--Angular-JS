@@ -1,0 +1,23 @@
+<div class="calculator">
+    <div class="calculator__output" *ngIf="!stringToEval">0</div>
+    <div class="calculator__output" *ngIf="stringToEval">{{stringToEval}}</div>
+    <div class="calculator__keys">
+        <button class="calculator__keys calculator__keys--operator" (click)="takeinput('+')">+</button>
+        <button class="calculator__keys calculator__keys--operator" (click)="takeinput('-')">-</button>
+        <button class="calculator__keys calculator__keys--operator" (click)="takeinput('*')">&times;</button>
+        <button class="calculator__keys calculator__keys--operator" (click)="takeinput('/')">÷</button>
+        <button class="calculator__key" (click)="takeinput('7')">7</button>
+        <button class="calculator__key" (click)="takeinput('8')">8</button>
+        <button class="calculator__key" (click)="takeinput('9')">9</button>
+        <button class="calculator__key" (click)="takeinput('4')">4</button>
+        <button class="calculator__key" (click)="takeinput('5')">5</button>
+        <button class="calculator__key" (click)="takeinput('6')">6</button>
+        <button class="calculator__key" (click)="takeinput('1')">1</button>
+        <button class="calculator__key" (click)="takeinput('2')"> 2</button>
+        <button class="calculator__key" (click)="takeinput('3')"> 3</button>
+        <button class="calculator__key" (click)="takeinput('0')">0</button>
+        <button class="calculator__key" (click)="takeinput('.')">.</button>
+        <button class="calcalutor__key calculator__key--enter" (click)="evaluate()">=</button>
+        <button class="calculator__key" (click)="reset()">AC</button>
+    </div>
+</div>
